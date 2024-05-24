@@ -1,18 +1,21 @@
-/** @type {import('tailwindcss').Config} */
+// tailwind.config.js
 module.exports = {
-  content: [
-    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
-  ],
+  purge: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
+  darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      colors: {
+        primary: '#1A202C', // Dark Gray
+        secondary: '#2D3748', // Darker Gray
+        accent: '#3182CE', // Blue
+        success: '#38A169', // Green
+        warning: '#DD6B20', // Orange
+        danger: '#E53E3E', // Red
       },
     },
   },
+  variants: {
+    extend: {},
+  },
   plugins: [],
-};
+}
