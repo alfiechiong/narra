@@ -1,8 +1,7 @@
 import React from 'react';
 import * as NavigationMenu from '@radix-ui/react-navigation-menu';
 import { styled, keyframes } from '@stitches/react';
-import { CaretDownIcon } from '@radix-ui/react-icons';
-import { violet, mauve, indigo, purple, blackA } from '@radix-ui/colors';
+import { violet,blackA } from '@radix-ui/colors';
 import { Button } from '@headlessui/react'
 
 const Navigation = () => {
@@ -17,6 +16,9 @@ const Navigation = () => {
                 </NavigationMenu.Item>
                 <NavigationMenu.Item>
                     <NavigationMenuLink href="/Contact"> Contact</NavigationMenuLink>
+                </NavigationMenu.Item>
+                <NavigationMenu.Item>
+                    <NavigationMenuLink href="/login"> Login</NavigationMenuLink>
                 </NavigationMenu.Item>
             </NavigationMenuList>
 

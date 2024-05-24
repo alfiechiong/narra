@@ -11,8 +11,6 @@ function Home() {
         Hello World!</h1>
         <p>Sample Radix button</p>
           <Button type="primary" color= "red" radius="small" onClick={()=>alert("hello world")}>new button</Button>
-          
-         
         </div>
     </Layout>
   );
